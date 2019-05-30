@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>queue | KickPeach</title>
+    <meta name="description" content="一个提供模块化服务的现代PHP小框架">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.b9f6e0ea.css" as="style"><link rel="preload" href="/assets/js/app.d8481650.js" as="script"><link rel="preload" href="/assets/js/2.21079776.js" as="script"><link rel="preload" href="/assets/js/21.5ff111c5.js" as="script"><link rel="prefetch" href="/assets/js/10.55aacf00.js"><link rel="prefetch" href="/assets/js/11.814c18b7.js"><link rel="prefetch" href="/assets/js/12.51fdea6a.js"><link rel="prefetch" href="/assets/js/13.8d771a0a.js"><link rel="prefetch" href="/assets/js/14.dd0aa15c.js"><link rel="prefetch" href="/assets/js/15.8fccf6ee.js"><link rel="prefetch" href="/assets/js/16.b20f78f5.js"><link rel="prefetch" href="/assets/js/17.5ae0739f.js"><link rel="prefetch" href="/assets/js/18.67575a08.js"><link rel="prefetch" href="/assets/js/19.cb795208.js"><link rel="prefetch" href="/assets/js/20.83614ffb.js"><link rel="prefetch" href="/assets/js/22.83f65b97.js"><link rel="prefetch" href="/assets/js/3.d20a4fdd.js"><link rel="prefetch" href="/assets/js/4.51fd03cb.js"><link rel="prefetch" href="/assets/js/5.f55dded8.js"><link rel="prefetch" href="/assets/js/6.a24831df.js"><link rel="prefetch" href="/assets/js/7.1b6b49ca.js"><link rel="prefetch" href="/assets/js/8.77a4347c.js"><link rel="prefetch" href="/assets/js/9.aa5e001c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b9f6e0ea.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">KickPeach</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="http://shang.qq.com/wpa/qunwpa?idkey=96a7bedb26282d88729887cbab1d707d7b1f0ded57e2a1729233f51d094b74aa" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  加入交流群
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">github</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/KickPeach/kickPeach" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  kickPeach
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="http://shang.qq.com/wpa/qunwpa?idkey=96a7bedb26282d88729887cbab1d707d7b1f0ded57e2a1729233f51d094b74aa" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  加入交流群
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">github</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/KickPeach/kickPeach" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  kickPeach
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>KickPeach使用指南</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>database组件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>queue组件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/queue/introduce.html" class="active sidebar-link">queue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/queue/introduce.html#关于beanstalkd" class="sidebar-link">关于Beanstalkd</a></li><li class="sidebar-sub-header"><a href="/guide/queue/introduce.html#几个重要的概念" class="sidebar-link">几个重要的概念</a></li><li class="sidebar-sub-header"><a href="/guide/queue/introduce.html#怎么使用" class="sidebar-link">怎么使用</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>MdCalls组件</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="queue"><a href="#queue" aria-hidden="true" class="header-anchor">#</a> queue</h1> <p>基于beanstalkd实现的任务队列，方便去分发任务和解决任务,此库可适用以下场景：</p> <ul><li>用作延时队列：比如可以用于如果用户30分钟内不操作，任务关闭。</li> <li>用作定时任务：比如可以用于专门的后台任务。</li> <li>用作异步操作：这是所有消息队列都最常用的，先将任务仍进去，顺序执行。</li> <li>用作循环队列：用release命令可以循环执行任务，比如可以做负载均衡任务分发。</li> <li>用作兜底机制：比如一个请求有失败的概率，可以用Beanstalk不断重试，设定超时时间，时间内尝试到成功为止</li></ul> <h2 id="关于beanstalkd"><a href="#关于beanstalkd" aria-hidden="true" class="header-anchor">#</a> 关于Beanstalkd</h2> <p>Beanstalkd 是一个轻量级的内存型队列，利用了和 Memcache 类似的协议。依赖 libevent 单线程事件分发机制, 可以部署多个实例，但是高并发支持还是不太友好；</p> <h2 id="几个重要的概念"><a href="#几个重要的概念" aria-hidden="true" class="header-anchor">#</a> 几个重要的概念</h2> <ul><li>job：一个需要异步处理的任务，是 Beanstalkd 中的基本单元，需要放在一个 tube 中。</li> <li>tube：一个有名的任务队列，用来存储统一类型的 job，是 producer 和 consumer 操作的对象。</li> <li>producer：Job 的生产者，通过 put 命令来将一个 job 放到一个 tube 中。</li> <li>consumer：Job的消费者，通过 reserve/release/bury/delete 命令来获取 job 或改变 job 的状态。</li></ul> <h3 id="job的生命周期"><a href="#job的生命周期" aria-hidden="true" class="header-anchor">#</a> Job的生命周期</h3> <p>任务在队里之中被称作 Job. 一个 Job 在 Beanstalkd 中有以下的生命周期：</p> <ul><li>put 将一个任务放置进 tube 中</li> <li>deayed 这个任务现在再等待中，需要若干秒才能准备完毕【延迟队列】</li> <li>ready 这个任务已经准备好了，可以消费了。所有的消费都是要从取 ready 状态的 job</li> <li>reserved 这个任务已经被消费者消费</li> <li>release 这个 job 执行失败了，把它放进 ready 状态队列中。让其他队列执行</li> <li>bury 这个 job 执行失败了，但不希望其他队列执行，先把它埋起来</li></ul> <div class="language-php extra-class"><pre class="language-php"><code>    
+     put with delay               release with delay
+      <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token constant">DELAYED</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token punctuation">.</span>
+                            <span class="token operator">|</span>                   <span class="token operator">|</span>
+                            <span class="token operator">|</span> <span class="token punctuation">(</span>time passes<span class="token punctuation">)</span>     <span class="token operator">|</span>
+                            <span class="token operator">|</span>                   <span class="token operator">|</span>
+       put                  v     reserve       <span class="token operator">|</span>       delete
+      <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token constant">READY</span><span class="token punctuation">]</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token constant">RESERVED</span><span class="token punctuation">]</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token operator">*</span>poof<span class="token operator">*</span>
+                           <span class="token operator">^</span>  <span class="token operator">^</span>                <span class="token operator">|</span>  <span class="token operator">|</span>
+                           <span class="token operator">|</span>   \  release      <span class="token operator">|</span>  <span class="token operator">|</span>
+                           <span class="token operator">|</span>    `<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span><span class="token single-quoted-string string">'   |
+                           |                      |
+                           | kick                 |
+                           |                      |
+                           |       bury           |
+                        [BURIED] &lt;---------------'</span>
+                           <span class="token operator">|</span>
+                           <span class="token operator">|</span>  delete
+                            `<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token operator">*</span>poof<span class="token operator">*</span>
+</code></pre></div><h2 id="怎么使用"><a href="#怎么使用" aria-hidden="true" class="header-anchor">#</a> 怎么使用</h2> <p>具体实例可参考<a href="https://github.com/KickPeach/queue/blob/master/tests/QueueTest.php" target="_blank" rel="noopener noreferrer">测试例子<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h3> <p><code>composer require kickpeach/queue -vvv</code></p> <h3 id="overview"><a href="#overview" aria-hidden="true" class="header-anchor">#</a> Overview</h3> <ul><li><a href="#create-queue">Create Queue</a></li> <li><a href="#create-job">Create Job</a></li> <li><a href="#dispatch-job">Dispatch Job</a></li> <li><a href="#process-job">Process Job</a></li> <li><a href="#recommend">Recommend</a></li> <li><a href="#example">Example</a></li> <li><a href="#todo">Todo</a></li></ul> <h3 id="create-queue"><a href="#create-queue" aria-hidden="true" class="header-anchor">#</a> Create Queue</h3> <div class="language- extra-class"><pre class="language-text"><code>use KickPeach\Queue\Drivers\Beanstalkd;
+use KickPeach\Queue\Queue;
+
+$queue = new Queue(new Beanstalkd($host, $port));
+</code></pre></div><h3 id="create-job"><a href="#create-job" aria-hidden="true" class="header-anchor">#</a> Create Job</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;?php
+
+use KickPeach\Queue\Job;
+
+class ExampleJob extends Job
+{
+    /**
+     * @var string job queue name (beanstalkd tube)
+     */
+    public $queue = 'default';
+
+    /**
+     * The &quot;time to run&quot; for all pushed jobs. (beanstalkd ttr, timeout)
+     *
+     * @var int 允许 worker 执行的最大秒数,超时 job 将会被 release 到 ready 状态.
+     */
+    public $retry_after = 60;
+
+    /**
+     * The number of times the job may be attempted.
+     *
+     * @var int 最大尝试次数
+     */
+    public $tries = 1;
+
+    /**
+     * @var array
+     */
+    public $words;
+
+    public function __construct(array $words)
+    {
+        $this-&gt;words = $words;
+    }
+
+    public function handle()
+    {
+        var_export($this-&gt;words);
+
+        var_dump($this-&gt;retry_after, $this-&gt;tries);
+
+        // throw new \Exception('handle job with error...lol ^_^');
+    }
+}
+</code></pre></div><p>specifying job queue by defining <code>$queue</code> , specifying Max Job Attempts by defining <code>$tries</code> , specifying timeout Values by defining <code>$retry_after</code> .</p> <h3 id="dispatch-job"><a href="#dispatch-job" aria-hidden="true" class="header-anchor">#</a> Dispatch Job</h3> <div class="language- extra-class"><pre class="language-text"><code>$queue-&gt;push(new ExampleJob(['i', 'love', 'china']));
+</code></pre></div><p>of cause, you can dispatch job later (push a delayed job) :</p> <div class="language- extra-class"><pre class="language-text"><code>$queue-&gt;later(60, new ExampleJob(['i', 'love', 'china']));
+</code></pre></div><h3 id="process-job"><a href="#process-job" aria-hidden="true" class="header-anchor">#</a> Process Job</h3> <div class="language- extra-class"><pre class="language-text"><code>$worker = new Worker($queue);
+
+$worker-&gt;daemon();
+</code></pre></div><blockquote><p>Note: <code>$worker-&gt;daemon()</code> is blocking.</p></blockquote> <p>by default, the worker will will listen  the tube named <code>default</code>, you can specifying worker queue (beanstalkd tube) like :</p> <div class="language- extra-class"><pre class="language-text"><code>$queueTube = 'sendEmail';
+$worker = new Worker($queue, $queueTube);
+
+$worker-&gt;daemon();
+</code></pre></div><p>you can specifying worker with sleep time while there is no job, and memoryLimit, like :</p> <div class="language- extra-class"><pre class="language-text"><code>$sleep = 60;
+$memoryLimit = 128;
+
+$queueTube = 'sendEmail';
+$worker = new Worker($queue, $queueTube);
+
+$worker-&gt;daemon($sleep, $memoryLimit);
+</code></pre></div><h1 id="license"><a href="#license" aria-hidden="true" class="header-anchor">#</a> License</h1> <p>The MIT License (MIT).</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/guide/database/introduce.html" class="prev">
+          database
+        </a></span> <span class="next"><a href="/guide/mdcalls/introduce.html">
+          mdCalls
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d8481650.js" defer></script><script src="/assets/js/2.21079776.js" defer></script><script src="/assets/js/21.5ff111c5.js" defer></script>
+  </body>
+</html>
